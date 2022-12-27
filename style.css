@@ -1,29 +1,35 @@
-body {
-  background: gray;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-.logo {
-  margin-bottom: 10%;
+
+#main {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		),
+		url("./images/maxresdefault.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
 }
-.internet-access {
-  display: block;
-  margin: 4% auto;
-  border-radius: 10px;
-  background: #F36523;
-  color: white;
-  width: 80%;
-  font-size: 13px;
-  padding: 10px;
-  text-decoration: none !important;
+
+.bd {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
 }
-@media screen and (min-width: 1025px) {
-  input {
-    width: 50%;
-  }
-  .internet-access {
-    width: 40%;
-  }
+
+.access-btn {
+	text-decoration: none;
+	background-color: rgb(56, 56, 187);
+	display: inline-block;
+	color: #fff;
+	padding: 10px;
+  text-transform: capitalize;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
